@@ -85,11 +85,18 @@ function initMap() {
     let markSf49ers = new google.maps.Marker({position: sf49ers, title: 'San Francisco 49ers', map: map});
     let markSeahawks = new google.maps.Marker({position: seahawks, title: 'Seattle Seahawks', map: map});
 
-    // Example of displaying an info window...
-    let infowindow = new google.maps.InfoWindow({
+    // Examples of displaying an info window...
+    let infoSeahawks = new google.maps.InfoWindow({
         content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
     });
+    let infoPackers = new google.maps.InfoWindow({
+        content: '<h3>Green Bay Packers</h3><p><strong>Division: </strong>NFC North</p><p><strong>Stadium: </strong>Lambeau Field</p>'
+    });
+    
     markSeahawks.addListener('click', function() {
-        infowindow.open(map, markSeahawks);
+        infoSeahawks.open(map, markSeahawks);
+    })
+    markPackers.addListener('click', function() {
+        infoPackers.open(map, markPackers);
     })
 }
