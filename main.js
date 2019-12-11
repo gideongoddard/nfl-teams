@@ -111,6 +111,19 @@ function initMap() {
     let infoSteelers = new google.maps.InfoWindow({
         content: '<h3>Pittsburgh Steelers</h3><p><strong>Division: </strong>AFC North</p><p><strong>Stadium: </strong>Heinz Field</p>'
     });
+    // AFC SOUTH
+    let infoTexans = new google.maps.InfoWindow({
+        content: '<h3>Houston Texans</h3><p><strong>Division: </strong>AFC South</p><p><strong>Stadium: </strong>NRG Stadium</p>'
+    });
+    let infoColts = new google.maps.InfoWindow({
+        content: '<h3>Indianapolis Colts</h3><p><strong>Division: </strong>AFC South</p><p><strong>Stadium: </strong>Lucas Oil Stadium</p>'
+    });
+    let infoJaguars = new google.maps.InfoWindow({
+        content: '<h3>Jacksonville Jaguars</h3><p><strong>Division: </strong>AFC South</p><p><strong>Stadium: </strong>TIAA Bank Field</p>'
+    });
+    let infoTitans = new google.maps.InfoWindow({
+        content: '<h3>Tennessee Titans</h3><p><strong>Division: </strong>AFC South</p><p><strong>Stadium: </strong>Nissan Stadium</p>'
+    });
     // ...
     let infoSeahawks = new google.maps.InfoWindow({
         content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
@@ -144,6 +157,19 @@ function initMap() {
     })
     markSteelers.addListener('click', function() {
         infoSteelers.open(map, markSteelers);
+    })
+    // AFC SOUTH
+    markTexans.addListener('click', function() {
+        infoTexans.open(map, markTexans);
+    })
+    markColts.addListener('click', function() {
+        infoColts.open(map, markColts);
+    })
+    markJaguars.addListener('click', function() {
+        infoJaguars.open(map, markJaguars);
+    })
+    markTitans.addListener('click', function() {
+        infoTitans.open(map, markTitans);
     })
     // ...
     markSeahawks.addListener('click', function() {
