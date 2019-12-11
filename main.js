@@ -93,12 +93,24 @@ function initMap() {
         content: '<h3>Miami Dolphins</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: </strong>Hard Rock Stadium</p>'
     });
     let infoPatriots = new google.maps.InfoWindow({
-        content: '<h3>New England Patriots</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: Gillette Stadium</strong></p>'
+        content: '<h3>New England Patriots</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: </strong>Gillette Stadium</p>'
     });
     let infoJets = new google.maps.InfoWindow({
         content: '<h3>New York Jets</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: </strong>MetLife Stadium</p>'
     });
     // AFC NORTH
+    let infoRavens = new google.maps.InfoWindow({
+        content: '<h3>Baltimore Ravens</h3><p><strong>Division: </strong>AFC North</p><p><strong>Stadium: </strong>M&T Bank Stadium</p>'
+    });
+    let infoBengals = new google.maps.InfoWindow({
+        content: '<h3>Cincinnati Bengals</h3><p><strong>Division: </strong>AFC North</p><p><strong>Stadium: </strong>Paul Brown Stadium</p>'
+    });
+    let infoBrowns = new google.maps.InfoWindow({
+        content: '<h3>Cleveland Browns</h3><p><strong>Division: </strong>AFC North</p><p><strong>Stadium: </strong>FirstEnergy Stadium</p>'
+    });
+    let infoSteelers = new google.maps.InfoWindow({
+        content: '<h3>Pittsburgh Steelers</h3><p><strong>Division: </strong>AFC North</p><p><strong>Stadium: </strong>Heinz Field</p>'
+    });
     // ...
     let infoSeahawks = new google.maps.InfoWindow({
         content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
@@ -119,6 +131,19 @@ function initMap() {
     })
     markJets.addListener('click', function() {
         infoJets.open(map, markJets);
+    })
+    // AFC NORTH
+    markRavens.addListener('click', function() {
+        infoRavens.open(map, markRavens);
+    })
+    markBengals.addListener('click', function() {
+        infoBengals.open(map, markBengals);
+    })
+    markBrowns.addListener('click', function() {
+        infoBrowns.open(map, markBrowns);
+    })
+    markSteelers.addListener('click', function() {
+        infoSteelers.open(map, markSteelers);
     })
     // ...
     markSeahawks.addListener('click', function() {
