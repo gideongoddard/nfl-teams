@@ -85,7 +85,21 @@ function initMap() {
     let markSf49ers = new google.maps.Marker({position: sf49ers, title: 'San Francisco 49ers', map: map});
     let markSeahawks = new google.maps.Marker({position: seahawks, title: 'Seattle Seahawks', map: map});
 
-    // Examples of displaying an info window...
+    // AFC EAST
+    let infoBills = new google.maps.InfoWindow({
+        content: '<h3>Buffalo Bills</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: </strong>New Era Field</p>'
+    });
+    let infoDolphins = new google.maps.InfoWindow({
+        content: '<h3>Miami Dolphins</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: </strong>Hard Rock Stadium</p>'
+    });
+    let infoPatriots = new google.maps.InfoWindow({
+        content: '<h3>New England Patriots</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: Gillette Stadium</strong></p>'
+    });
+    let infoJets = new google.maps.InfoWindow({
+        content: '<h3>New York Jets</h3><p><strong>Division: </strong>AFC East</p><p><strong>Stadium: </strong>MetLife Stadium</p>'
+    });
+    // AFC NORTH
+    // ...
     let infoSeahawks = new google.maps.InfoWindow({
         content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
     });
@@ -93,6 +107,20 @@ function initMap() {
         content: '<h3>Green Bay Packers</h3><p><strong>Division: </strong>NFC North</p><p><strong>Stadium: </strong>Lambeau Field</p>'
     });
     
+    // AFC EAST
+    markBills.addListener('click', function() {
+        infoBills.open(map, markBills);
+    })
+    markDolphins.addListener('click', function() {
+        infoDolphins.open(map, markDolphins);
+    })
+    markPatriots.addListener('click', function() {
+        infoPatriots.open(map, markPatriots);
+    })
+    markJets.addListener('click', function() {
+        infoJets.open(map, markJets);
+    })
+    // ...
     markSeahawks.addListener('click', function() {
         infoSeahawks.open(map, markSeahawks);
     })
