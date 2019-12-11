@@ -137,6 +137,19 @@ function initMap() {
     let infoRaiders = new google.maps.InfoWindow({
         content: '<h3>Oakland Raiders</h3><p><strong>Division: </strong>AFC West</p><p><strong>Stadium: </strong>Ring Central Coliseum</p>'
     });
+    // NFC EAST
+    let infoCowboys = new google.maps.InfoWindow({
+        content: '<h3>Dallas Cowboys</h3><p><strong>Division: </strong>NFC East</p><p><strong>Stadium: </strong>AT&T Stadium</p>'
+    });
+    let infoGiants = new google.maps.InfoWindow({
+        content: '<h3>New York Giants</h3><p><strong>Division: </strong>NFC East</p><p><strong>Stadium: </strong>MetLife Stadium</p>'
+    });
+    let infoEagles = new google.maps.InfoWindow({
+        content: '<h3>Philadelphia Eagles</h3><p><strong>Division: </strong>NFC East</p><p><strong>Stadium: </strong>Lincoln Financial Field</p>'
+    });
+    let infoRedskins = new google.maps.InfoWindow({
+        content: '<h3>Washington Redskins</h3><p><strong>Division: </strong>NFC East</p><p><strong>Stadium: </strong>FedExField</p>'
+    });
     // ...
     let infoSeahawks = new google.maps.InfoWindow({
         content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
@@ -196,6 +209,19 @@ function initMap() {
     })
     markRaiders.addListener('click', function() {
         infoRaiders.open(map, markRaiders);
+    })
+    // NFC EAST
+    markCowboys.addListener('click', function() {
+        infoCowboys.open(map, markCowboys);
+    })
+    markGiants.addListener('click', function() {
+        infoGiants.open(map, markGiants);
+    })
+    markEagles.addListener('click', function() {
+        infoEagles.open(map, markEagles);
+    })
+    markRedskins.addListener('click', function() {
+        infoRedskins.open(map, markRedskins);
     })
     // ...
     markSeahawks.addListener('click', function() {
