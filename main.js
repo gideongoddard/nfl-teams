@@ -124,6 +124,19 @@ function initMap() {
     let infoTitans = new google.maps.InfoWindow({
         content: '<h3>Tennessee Titans</h3><p><strong>Division: </strong>AFC South</p><p><strong>Stadium: </strong>Nissan Stadium</p>'
     });
+    // AFC WEST
+    let infoBroncos = new google.maps.InfoWindow({
+        content: '<h3>Denver Broncos</h3><p><strong>Division: </strong>AFC West</p><p><strong>Stadium: </strong>Empower Field at Mile High</p>'
+    });
+    let infoChiefs = new google.maps.InfoWindow({
+        content: '<h3>Kansas City Chiefs</h3><p><strong>Division: </strong>AFC West</p><p><strong>Stadium: </strong>Arrowhead Stadium</p>'
+    });
+    let infoChargers = new google.maps.InfoWindow({
+        content: '<h3>Los Angeles Chargers</h3><p><strong>Division: </strong>AFC West</p><p><strong>Stadium: </strong>Dignity Health Sports Park</p>'
+    });
+    let infoRaiders = new google.maps.InfoWindow({
+        content: '<h3>Oakland Raiders</h3><p><strong>Division: </strong>AFC West</p><p><strong>Stadium: </strong>Ring Central Coliseum</p>'
+    });
     // ...
     let infoSeahawks = new google.maps.InfoWindow({
         content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
@@ -170,6 +183,19 @@ function initMap() {
     })
     markTitans.addListener('click', function() {
         infoTitans.open(map, markTitans);
+    })
+    // AFC WEST
+    markBroncos.addListener('click', function() {
+        infoBroncos.open(map, markBroncos);
+    })
+    markChiefs.addListener('click', function() {
+        infoChiefs.open(map, markChiefs);
+    })
+    markChargers.addListener('click', function() {
+        infoChargers.open(map, markChargers);
+    })
+    markRaiders.addListener('click', function() {
+        infoRaiders.open(map, markRaiders);
     })
     // ...
     markSeahawks.addListener('click', function() {
