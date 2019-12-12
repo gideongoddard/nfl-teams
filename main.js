@@ -42,7 +42,7 @@ function initMap() {
     let sf49ers = {lat: 37.403, lng: -121.970};
     let seahawks = {lat: 47.595, lng: -122.332};
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 37.275881, lng: -104.6530552}, zoom: 5
+        center: {lat: 37.275881, lng: -97.50}, zoom: 5
     });
     // AFC EAST
     let markBills = new google.maps.Marker({position: bills, title: 'Buffalo Bills', map: map});
