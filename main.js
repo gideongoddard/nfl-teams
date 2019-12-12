@@ -150,12 +150,44 @@ function initMap() {
     let infoRedskins = new google.maps.InfoWindow({
         content: '<h3>Washington Redskins</h3><p><strong>Division: </strong>NFC East</p><p><strong>Stadium: </strong>FedExField</p>'
     });
-    // ...
-    let infoSeahawks = new google.maps.InfoWindow({
-        content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
+    // NFC NORTH
+    let infoBears = new google.maps.InfoWindow({
+        content: '<h3>Chicago Bears</h3><p><strong>Division: </strong>NFC North</p><p><strong>Stadium: </strong>Soldier Field</p>'
+    });
+    let infoLions = new google.maps.InfoWindow({
+        content: '<h3>Detroit Lions</h3><p><strong>Division: </strong>NFC North</p><p><strong>Stadium: </strong>Ford Field</p>'
     });
     let infoPackers = new google.maps.InfoWindow({
         content: '<h3>Green Bay Packers</h3><p><strong>Division: </strong>NFC North</p><p><strong>Stadium: </strong>Lambeau Field</p>'
+    });
+    let infoVikings = new google.maps.InfoWindow({
+        content: '<h3>Minnesota Vikings</h3><p><strong>Division: </strong>NFC North</p><p><strong>Stadium: </strong>U.S. Bank Stadium</p>'
+    });
+    // NFC SOUTH
+    let infoFalcons = new google.maps.InfoWindow({
+        content: '<h3>Atlanta Falcons</h3><p><strong>Division: </strong>NFC South</p><p><strong>Stadium: </strong>Mercedes-Benz Stadium</p>'
+    });
+    let infoPanthers = new google.maps.InfoWindow({
+        content: '<h3>Carolina Panthers</h3><p><strong>Division: </strong>NFC South</p><p><strong>Stadium: </strong>Bank of America Stadium</p>'
+    });
+    let infoSaints = new google.maps.InfoWindow({
+        content: '<h3>New Orleans Saints</h3><p><strong>Division: </strong>NFC South</p><p><strong>Stadium: </strong>Mercedes-Benz Superdome</p>'
+    });
+    let infoBuccaneers = new google.maps.InfoWindow({
+        content: '<h3>Tampa Bay Buccaneers</h3><p><strong>Division: </strong>NFC South</p><p><strong>Stadium: </strong>Raymond James Stadium</p>'
+    });
+    // NFC WEST
+    let infoCardinals = new google.maps.InfoWindow({
+        content: '<h3>Arizona Cardinals</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>State Farm Stadium</p>'
+    });
+    let infoRams = new google.maps.InfoWindow({
+        content: '<h3>Los Angeles Rams</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>Los Angeles Memorial Coliseum</p>'
+    });
+    let info49ers = new google.maps.InfoWindow({
+        content: '<h3>San Francisco 49ers</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>Levi\'s Stadium</p>'
+    });
+    let infoSeahawks = new google.maps.InfoWindow({
+        content: '<h3>Seattle Seahawks</h3><p><strong>Division: </strong>NFC West</p><p><strong>Stadium: </strong>CenturyLink Field</p>'
     });
     
     // AFC EAST
@@ -223,11 +255,44 @@ function initMap() {
     markRedskins.addListener('click', function() {
         infoRedskins.open(map, markRedskins);
     })
-    // ...
-    markSeahawks.addListener('click', function() {
-        infoSeahawks.open(map, markSeahawks);
+    // NFC NORTH
+    markBears.addListener('click', function() {
+        infoBears.open(map, markBears);
+    })
+    markLions.addListener('click', function() {
+        infoLions.open(map, markLions);
     })
     markPackers.addListener('click', function() {
         infoPackers.open(map, markPackers);
     })
+    markVikings.addListener('click', function() {
+        infoVikings.open(map, markVikings);
+    })
+    // NFC SOUTH
+    markFalcons.addListener('click', function() {
+        infoFalcons.open(map, markFalcons);
+    })
+    markPanthers.addListener('click', function() {
+        infoPanthers.open(map, markPanthers);
+    })
+    markSaints.addListener('click', function() {
+        infoSaints.open(map, markSaints);
+    })
+    markBuccaneers.addListener('click', function() {
+        infoBuccaneers.open(map, markBuccaneers);
+    })
+    // NFC WEST
+    markCardinals.addListener('click', function() {
+        infoCardinals.open(map, markCardinals);
+    })
+    markRams.addListener('click', function() {
+        infoRams.open(map, markRams);
+    })
+    markSf49ers.addListener('click', function() {
+        info49ers.open(map, markSf49ers);
+    })
+    markSeahawks.addListener('click', function() {
+        infoSeahawks.open(map, markSeahawks);
+    })
+    
 }
