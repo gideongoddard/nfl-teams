@@ -31,8 +31,8 @@ let teams = [
         name: 'New York Jets',
         division: 'AFC East',
         location: {
-            lat: 40.814,
-            lng: -74.074
+            lat: 40.813,
+            lng: -74.075
         },
         stadium: 'MetLife Stadium',
     },
